@@ -1,0 +1,23 @@
+{
+    "name": "razvan/revolt",
+    "autoload": {
+        "psr-4": {
+            "Razvan\\Revolt\\": "src/"
+        }
+    },
+    "scripts": {
+        "load": "composer dump-autoload -o",
+        "start": "php ./src/main.php",
+        "debug": "php -dxdebug.mode=debug,develop -dxdebug.start_with_request=yes ./src/main.php"
+    },
+    "authors": [
+        {
+            "name": "tncrazvan",
+            "email": "tangent.jotey@gmail.com"
+        }
+    ],
+    "require": {
+        "amphp/amp": "^3.0",
+        "amphp/file": "^3.0"
+    }
+}
